@@ -122,6 +122,8 @@ def fun(n):
   d=int(input())
   if(d==1):
     
+    from time import sleep
+    
     print("SI.NO.   ACCOUNT HOLDER'S NAME      ACCOUNT NO.")
     print("____________________________________________________")
     with open('ak.txt','r') as rf:
@@ -129,6 +131,17 @@ def fun(n):
         print(line, end='')
 
     sleep(3)
+    
+    from time import sleep
+    import sys
+
+    for i in range(21):
+      sys.stdout.write('\r')
+      # the exact output you're looking for:
+      sys.stdout.write("[%-20s] %d%%" % (':'*i, 5*i))
+      sys.stdout.flush()
+      sleep(0.25)
+    
     fun(n-1)
 
   elif(d==2):
