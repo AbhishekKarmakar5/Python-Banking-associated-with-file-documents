@@ -4,3 +4,4 @@ Files has been used to manage all kinds of bank procedure. If the user demands t
 Later when the user wants to credit or debit money, the unique pin entered should be same to the one they have already saved into the file earlier.
 
 In Short it's a banking system associated with passwords and all types of authetication.
+The auto-generation of PIN will be added in it's second version.
